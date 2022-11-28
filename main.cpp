@@ -1,5 +1,5 @@
 double my_pow(double n,unsigned int deg){
-  double s=1;
-  for (int i=1; i<=deg;++i)
-    s*=n;
-  return s;}
+  double res=1;
+  for (int i=0; i<deg;i++)
+    res*=n;
+  return res;}
