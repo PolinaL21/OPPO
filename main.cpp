@@ -1,6 +1,19 @@
-double my_pow(double n,unsigned int k){
-  double s=1;
-  for (int i=1; i<=k;++i)
-    s*=n;
-  return s;
+double power(long num, long deg) {
+    double result = 1;
+
+    if(deg < 0) {
+        deg = -deg;
+        for(long i = 0; i < deg; i++) {
+            result *= num;
+        }
+
+        return 1 / result;
+    }
+    else {
+        for (long i = 0; i < deg; i++) {
+            result *= num;
+        }
+
+        return result;
+    }
 }
