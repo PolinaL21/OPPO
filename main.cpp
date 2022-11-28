@@ -1,4 +1,4 @@
-double my_pow(double num, int deg) {
+double my_powup(double num, int deg) {
     double result = 1;
 
     if(deg < 0) {
